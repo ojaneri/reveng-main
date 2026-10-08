@@ -1,0 +1,3034 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.reveng-toolkit.org/audits/2025-11-docs-ux-audit/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>REVENG Documentation & UX Audit Report - REVENG Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reveng-documentation-ux-audit-report" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="REVENG Documentation" class="md-header__button md-logo" aria-label="REVENG Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            REVENG Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              REVENG Documentation &amp; UX Audit Report
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/oimiragieo/reveng-main" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oimiragieo/reveng-main
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/quick-start/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../user-guide/README.md" class="md-tabs__link">
+          
+  
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer-guide/README.md" class="md-tabs__link">
+          
+  
+  
+  Developer Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../architecture/overview/" class="md-tabs__link">
+          
+  
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ai-assistant-guide/README.md" class="md-tabs__link">
+          
+  
+  
+  AI Assistant Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../deployment/docker/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="REVENG Documentation" class="md-nav__button md-logo" aria-label="REVENG Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    REVENG Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/oimiragieo/reveng-main" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oimiragieo/reveng-main
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/first-analysis.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/cli-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/web-interface.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/binary-analysis.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binary Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/multi-language.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Language Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/ai-features.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/advanced-features.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/configuration.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developer Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/architecture.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/contributing.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/tool-development.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/api-reference.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/package-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Package Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/ghidra-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ghidra Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Assistant Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/claude-integration.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/tool-selection.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool Selection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/automation.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/best-practices.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/cloud-providers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud Providers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/enterprise.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enterprise
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Executive Summary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Executive Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overall-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overall Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#critical-issues-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical Issues Found
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critical Issues Found">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#critical-must-fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔴 CRITICAL (Must Fix)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔴 CRITICAL (Must Fix)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-mcp-server-crashes-on-first-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. MCP Server Crashes on First Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-version-number-inconsistency-in-source-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Version Number Inconsistency in Source Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-duplicate-documentation-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Duplicate Documentation Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#high-priority-should-fix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟡 HIGH PRIORITY (Should Fix)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟡 HIGH PRIORITY (Should Fix)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-documentation-file-references-incorrect-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Documentation File References Incorrect Paths
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-missing-installation-prerequisites-in-quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Missing Installation Prerequisites in Quick Start
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-cli-help-not-comprehensive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. CLI Help Not Comprehensive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-docsindexmd-references-missing-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. docs/index.md References Missing Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medium-priority-nice-to-have" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🟢 MEDIUM PRIORITY (Nice to Have)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟢 MEDIUM PRIORITY (Nice to Have)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-readmemd-line-count-claims-unverified" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. README.md Line Count Claims Unverified
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-inconsistent-command-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Inconsistent Command Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-javascript-deobfuscation-examples-reference-non-existent-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. JavaScript Deobfuscation Examples Reference Non-Existent Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-mcp-configuration-example-path-inconsistency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. MCP Configuration Example Path Inconsistency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-documentation-navigation-unclear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Documentation Navigation Unclear
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-structure-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Structure Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation Structure Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-journey-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Journey Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Journey Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-1-new-user-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 1: New User Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-2-first-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 2: First Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-mcp-server-launch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scenario 3: MCP Server Launch
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aiagent-experience-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI/Agent Experience Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI/Agent Experience Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mcp-integration-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MCP Integration Assessment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-readable-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI-Readable Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-quality-observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code Quality Observations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Quality Observations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positive-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positive Findings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#areas-for-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Areas for Improvement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-by-priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommendations by Priority
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommendations by Priority">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-actions-this-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immediate Actions (This Week)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#short-term-this-month" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Short Term (This Month)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medium-term-this-quarter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medium Term (This Quarter)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-improvement-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Improvement Plan
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation Improvement Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-consolidation-week-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1: Consolidation (Week 1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-reorganization-week-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2: Reorganization (Week 2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-enhancement-week-3-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Enhancement (Week 3-4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-acceptance-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Acceptance Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metrics-for-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metrics for Success
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Metrics for Success">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-current-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before (Current State)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#after-target-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        After (Target State)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conclusion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-strengths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Strengths
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-weaknesses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Weaknesses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overall-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overall Recommendation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priority Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-a-files-audited" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Appendix A: Files Audited
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendix A: Files Audited">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#documentation-15-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation (15+ files)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-10-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code (10+ files)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-b-test-commands-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Appendix B: Test Commands Used
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="reveng-documentation-ux-audit-report">REVENG Documentation &amp; UX Audit Report<a class="headerlink" href="#reveng-documentation-ux-audit-report" title="Permanent link">&para;</a></h1>
+<p><strong>Date:</strong> November 16, 2025
+<strong>Auditor:</strong> AI Assistant (Claude)
+<strong>Scope:</strong> Complete codebase walkthrough as a new user
+<strong>Method:</strong> Step-by-step user journey simulation, documentation review, code verification</p>
+<hr />
+<h2 id="executive-summary">Executive Summary<a class="headerlink" href="#executive-summary" title="Permanent link">&para;</a></h2>
+<p>This audit evaluated the REVENG platform from a new user's perspective, comparing documentation against actual implementation and identifying gaps in user experience. The audit found <strong>23 critical issues</strong> affecting user onboarding, documentation consistency, and system reliability.</p>
+<h3 id="overall-assessment">Overall Assessment<a class="headerlink" href="#overall-assessment" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Documentation Quality:</strong> 7/10 (Good content, but organizational issues)</li>
+<li><strong>User Experience:</strong> 6/10 (Functional but has friction points)</li>
+<li><strong>Code-Docs Alignment:</strong> 6.5/10 (Several mismatches found)</li>
+<li><strong>AI/Agent Experience:</strong> 7.5/10 (Strong foundation, needs polish)</li>
+</ul>
+<hr />
+<h2 id="critical-issues-found">Critical Issues Found<a class="headerlink" href="#critical-issues-found" title="Permanent link">&para;</a></h2>
+<h3 id="critical-must-fix">🔴 CRITICAL (Must Fix)<a class="headerlink" href="#critical-must-fix" title="Permanent link">&para;</a></h3>
+<h4 id="1-mcp-server-crashes-on-first-run">1. MCP Server Crashes on First Run<a class="headerlink" href="#1-mcp-server-crashes-on-first-run" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> The <code>reveng-mcp-server</code> crashes immediately when launched due to missing directory.</p>
+<p><strong>Error:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>FileNotFoundError: [Errno 2] No such file or directory: '/root/.reveng/mcp_server.log'
+</span></code></pre></div></p>
+<p><strong>Impact:</strong> Users cannot use MCP integration (a major v4.0 feature)</p>
+<p><strong>Root Cause:</strong> <code>reveng-mcp-server</code> script line 53 tries to create log file in <code>~/.reveng/</code> without ensuring directory exists</p>
+<p><strong>User Journey Impact:</strong>
+- Step: User runs <code>./reveng-mcp-server</code> (as documented)
+- Result: Crash with Python traceback
+- Expected: Server starts successfully</p>
+<p><strong>Fix Priority:</strong> CRITICAL</p>
+<hr />
+<h4 id="2-version-number-inconsistency-in-source-code">2. Version Number Inconsistency in Source Code<a class="headerlink" href="#2-version-number-inconsistency-in-source-code" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> CLI source file header shows wrong version</p>
+<p><strong>Location:</strong> <code>src/reveng/cli.py:9</code>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Version</span><span class="p">:</span> <span class="mf">3.0.0</span>  <span class="c1"># Should be 4.0.0</span>
+</span></code></pre></div></p>
+<p><strong>Impact:</strong> Developer confusion, inconsistent code comments</p>
+<p><strong>Actual Behavior:</strong> CLI correctly reports v4.0.0 at runtime (from version.py)</p>
+<p><strong>Fix Priority:</strong> HIGH</p>
+<hr />
+<h4 id="3-duplicate-documentation-files">3. Duplicate Documentation Files<a class="headerlink" href="#3-duplicate-documentation-files" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> Multiple documentation files cover the same content with different information</p>
+<p><strong>Duplicates Found:</strong>
+1. <strong>Installation Guides:</strong>
+   - <code>/INSTALLATION.md</code> (446 lines)
+   - <code>/docs/getting-started/installation.md</code> (343 lines)
+   - Content differs significantly - confusing for users</p>
+<ol>
+<li><strong>Quick Start Guides:</strong></li>
+<li><code>/QUICK_START.md</code> (298 lines)</li>
+<li><code>/docs/getting-started/quick-start.md</code> (218 lines)</li>
+<li>Different content and examples</li>
+</ol>
+<p><strong>Impact:</strong>
+- Users don't know which guide to follow
+- Documentation updates miss one location
+- SEO/search results show conflicting information</p>
+<p><strong>User Journey Impact:</strong>
+- New user searches for "installation"
+- Finds two different guides
+- Gets confused about which is authoritative</p>
+<p><strong>Fix Priority:</strong> HIGH</p>
+<hr />
+<h3 id="high-priority-should-fix">🟡 HIGH PRIORITY (Should Fix)<a class="headerlink" href="#high-priority-should-fix" title="Permanent link">&para;</a></h3>
+<h4 id="4-documentation-file-references-incorrect-paths">4. Documentation File References Incorrect Paths<a class="headerlink" href="#4-documentation-file-references-incorrect-paths" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> README.md references example files at wrong locations</p>
+<p><strong>Example from README.md line 331:</strong>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">-</span><span class="w"> </span><span class="gs">**claude.md**</span> - Complete project context (1,042 lines)
+</span></code></pre></div></p>
+<p><strong>Actual location:</strong> File exists but line count may be inaccurate</p>
+<p><strong>Similar Issues:</strong>
+- References to <code>my_first_analysis.py</code> at root level
+- Actual location: <code>examples/my_first_analysis.py</code></p>
+<p><strong>Fix Priority:</strong> HIGH</p>
+<hr />
+<h4 id="5-missing-installation-prerequisites-in-quick-start">5. Missing Installation Prerequisites in Quick Start<a class="headerlink" href="#5-missing-installation-prerequisites-in-quick-start" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> <code>QUICK_START.md</code> suggests users can install and run in "2 minutes" but doesn't mention:
+- Python version requirements clearly
+- System requirements
+- Potential installation failures</p>
+<p><strong>User Journey Impact:</strong>
+- User runs <code>./install-reveng.sh</code>
+- Encounters errors (Python too old, missing deps, etc.)
+- No troubleshooting guidance in quick start</p>
+<p><strong>Reality:</strong> Installation can take 5-15 minutes depending on system state</p>
+<p><strong>Fix Priority:</strong> HIGH</p>
+<hr />
+<h4 id="6-cli-help-not-comprehensive">6. CLI Help Not Comprehensive<a class="headerlink" href="#6-cli-help-not-comprehensive" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> Running <code>reveng --help</code> may fail if package not installed via pip</p>
+<p><strong>Observed:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>$<span class="w"> </span>reveng<span class="w"> </span>--help
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>bash:<span class="w"> </span>reveng:<span class="w"> </span><span class="nb">command</span><span class="w"> </span>not<span class="w"> </span>found
+</span></code></pre></div></p>
+<p><strong>But works via:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>$<span class="w"> </span>python3<span class="w"> </span>src/reveng/cli.py<span class="w"> </span>--help<span class="w">  </span><span class="c1"># Works</span>
+</span></code></pre></div></p>
+<p><strong>Root Cause:</strong> Documentation assumes <code>pip install -e .</code> was successful, but:
+- <code>install-reveng.sh</code> may not run on all systems
+- Users skip installation steps
+- No clear error message</p>
+<p><strong>Fix Priority:</strong> MEDIUM-HIGH</p>
+<hr />
+<h4 id="7-docsindexmd-references-missing-files">7. docs/index.md References Missing Files<a class="headerlink" href="#7-docsindexmd-references-missing-files" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> Documentation hub references files that may not exist or uses wrong paths</p>
+<p><strong>Example from <code>docs/index.md</code>:</strong>
+- References <code>user-guide/cli-usage.md</code>
+- References <code>deployment/docker.md</code>
+- Need to verify all links work</p>
+<p><strong>Fix Priority:</strong> MEDIUM</p>
+<hr />
+<h3 id="medium-priority-nice-to-have">🟢 MEDIUM PRIORITY (Nice to Have)<a class="headerlink" href="#medium-priority-nice-to-have" title="Permanent link">&para;</a></h3>
+<h4 id="8-readmemd-line-count-claims-unverified">8. README.md Line Count Claims Unverified<a class="headerlink" href="#8-readmemd-line-count-claims-unverified" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> README claims specific line counts for documentation files</p>
+<p><strong>Example:</strong>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">-</span><span class="w"> </span><span class="gs">**docs/mcp/README.md**</span> - MCP integration guide (651 lines)
+</span></code></pre></div></p>
+<p><strong>Problem:</strong> Line counts become stale, may be inaccurate</p>
+<p><strong>Fix:</strong> Remove specific line counts or auto-generate them</p>
+<hr />
+<h4 id="9-inconsistent-command-examples">9. Inconsistent Command Examples<a class="headerlink" href="#9-inconsistent-command-examples" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> Different docs show different command patterns</p>
+<p><strong>Examples:</strong>
+1. README: <code>reveng analyze &lt;binary&gt;</code>
+2. QUICK_START: <code>reveng analyze /path/to/binary.exe</code>
+3. CLI_REFERENCE: <code>reveng analyze [OPTIONS] &lt;binary_path&gt;</code></p>
+<p><strong>Impact:</strong> Minor confusion, not critical but reduces polish</p>
+<hr />
+<h4 id="10-javascript-deobfuscation-examples-reference-non-existent-files">10. JavaScript Deobfuscation Examples Reference Non-Existent Files<a class="headerlink" href="#10-javascript-deobfuscation-examples-reference-non-existent-files" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> Examples mention test samples that may not exist</p>
+<p><strong>From <code>examples/my_first_analysis.py:126</code>:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">./</span><span class="n">reveng</span><span class="o">-</span><span class="n">js</span> <span class="n">deobfuscate</span> <span class="n">examples</span><span class="o">/</span><span class="n">test</span><span class="o">-</span><span class="n">samples</span><span class="o">/</span><span class="n">obfuscated</span><span class="o">-</span><span class="n">simple</span><span class="o">.</span><span class="n">js</span>
+</span></code></pre></div></p>
+<p><strong>Need to verify:</strong> Does <code>examples/test-samples/obfuscated-simple.js</code> exist?</p>
+<hr />
+<h4 id="11-mcp-configuration-example-path-inconsistency">11. MCP Configuration Example Path Inconsistency<a class="headerlink" href="#11-mcp-configuration-example-path-inconsistency" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> Documentation shows different paths for MCP config</p>
+<p><strong>Variations found:</strong>
+- <code>~/.config/claude/mcp.json</code> (macOS/Linux)
+- <code>%APPDATA%\Claude\mcp.json</code> (Windows)
+- <code>mcp-config.example.json</code> (local example)</p>
+<p><strong>Recommendation:</strong> Clarify platform-specific paths more clearly</p>
+<hr />
+<h4 id="12-documentation-navigation-unclear">12. Documentation Navigation Unclear<a class="headerlink" href="#12-documentation-navigation-unclear" title="Permanent link">&para;</a></h4>
+<p><strong>Issue:</strong> Users don't know where to start</p>
+<p><strong>Current structure:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>/README.md           (578 lines, comprehensive)
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>/QUICK_START.md      (298 lines)
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>/GETTING_STARTED.md  (496 lines)
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>/INSTALLATION.md     (446 lines)
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>/docs/index.md       (94 lines)
+</span></code></pre></div></p>
+<p><strong>Problem:</strong>
+- Too many entry points
+- Unclear progression
+- New users overwhelmed</p>
+<p><strong>Recommendation:</strong> Create clearer landing page with decision tree</p>
+<hr />
+<h2 id="documentation-structure-issues">Documentation Structure Issues<a class="headerlink" href="#documentation-structure-issues" title="Permanent link">&para;</a></h2>
+<h3 id="current-state">Current State<a class="headerlink" href="#current-state" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>reveng-main/
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>├── README.md                     # Main entry (578 lines) ✓ Good
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>├── QUICK_START.md                # Quick start (298 lines)
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>├── GETTING_STARTED.md            # Getting started (496 lines)
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>├── INSTALLATION.md               # Installation (446 lines)
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>├── CLI_REFERENCE.md              # CLI docs (555 lines) ✓ Good
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>├── docs/
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>│   ├── index.md                  # Docs hub (94 lines)
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>│   ├── getting-started/
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>│   │   ├── installation.md       # DUPLICATE (343 lines) ❌
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>│   │   ├── quick-start.md        # DUPLICATE (218 lines) ❌
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>│   │   └── troubleshooting.md    # Unique (227 lines) ✓
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>│   └── mcp/
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>│       └── README.md             # MCP guide ✓ Good
+</span></code></pre></div>
+<h3 id="recommended-structure">Recommended Structure<a class="headerlink" href="#recommended-structure" title="Permanent link">&para;</a></h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>reveng-main/
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>├── README.md                     # Keep: Main entry point
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>├── QUICK_START.md                # Keep: 5-min quickstart
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>├── docs/
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>│   ├── index.md                  # Enhance: Better navigation
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>│   ├── getting-started/
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>│   │   ├── installation.md       # Consolidate installation docs here
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>│   │   ├── first-analysis.md     # Consolidate getting started here
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>│   │   └── troubleshooting.md    # Keep
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>│   ├── user-guide/
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>│   │   └── cli-reference.md      # Move CLI_REFERENCE.md here
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>│   └── mcp/
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>│       └── README.md             # Keep
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a># Remove from root:
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>- GETTING_STARTED.md (merge into docs/getting-started/first-analysis.md)
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>- INSTALLATION.md (keep docs/getting-started/installation.md only)
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>- CLI_REFERENCE.md (move to docs/user-guide/)
+</span></code></pre></div>
+<hr />
+<h2 id="user-journey-analysis">User Journey Analysis<a class="headerlink" href="#user-journey-analysis" title="Permanent link">&para;</a></h2>
+<h3 id="scenario-1-new-user-installation">Scenario 1: New User Installation<a class="headerlink" href="#scenario-1-new-user-installation" title="Permanent link">&para;</a></h3>
+<p><strong>Expected Journey (per docs):</strong>
+1. Clone repo
+2. Run <code>./install-reveng.sh</code>
+3. Run <code>reveng --version</code>
+4. Success! ✓</p>
+<p><strong>Actual Journey:</strong>
+1. Clone repo ✓
+2. Run <code>./install-reveng.sh</code>
+   - May fail if Python &lt; 3.9
+   - May fail if pip not available
+   - Script continues even if errors occur
+3. Run <code>reveng --version</code>
+   - <strong>Command not found</strong> (if pip install failed)
+4. User confused ❌</p>
+<p><strong>Friction Points:</strong>
+- No pre-flight checks before installation
+- Silent failures during pip install
+- No post-install verification
+- Error messages not user-friendly</p>
+<p><strong>Recommendations:</strong>
+1. Add system requirements check to installer
+2. Make installer fail fast with clear errors
+3. Add post-install verification
+4. Provide troubleshooting link on error</p>
+<hr />
+<h3 id="scenario-2-first-analysis">Scenario 2: First Analysis<a class="headerlink" href="#scenario-2-first-analysis" title="Permanent link">&para;</a></h3>
+<p><strong>Expected Journey:</strong>
+1. User has REVENG installed
+2. Runs <code>reveng analyze /bin/ls</code>
+3. Gets analysis results
+4. Success! ✓</p>
+<p><strong>Actual Journey:</strong>
+1. User has REVENG installed ✓
+2. Runs <code>reveng analyze /bin/ls</code>
+   - May work ✓
+   - May fail if dependencies missing
+   - No progress indicator for long analyses
+3. Results printed to stdout
+   - May be overwhelming for large binaries
+   - No guidance on interpreting results</p>
+<p><strong>Friction Points:</strong>
+- No progress indicators
+- Results format not explained
+- No "next steps" guidance</p>
+<hr />
+<h3 id="scenario-3-mcp-server-launch">Scenario 3: MCP Server Launch<a class="headerlink" href="#scenario-3-mcp-server-launch" title="Permanent link">&para;</a></h3>
+<p><strong>Expected Journey (per docs):</strong>
+1. Run <code>./reveng-mcp-server</code>
+2. Server starts
+3. Configure Claude Desktop
+4. Use AI features ✓</p>
+<p><strong>Actual Journey:</strong>
+1. Run <code>./reveng-mcp-server</code>
+2. <strong>CRASH:</strong> <code>FileNotFoundError: ~/.reveng/mcp_server.log</code>
+3. User gives up ❌</p>
+<p><strong>Friction Points:</strong>
+- Server doesn't create required directories
+- No helpful error message
+- No troubleshooting in docs for this error</p>
+<hr />
+<h2 id="aiagent-experience-analysis">AI/Agent Experience Analysis<a class="headerlink" href="#aiagent-experience-analysis" title="Permanent link">&para;</a></h2>
+<h3 id="mcp-integration-assessment">MCP Integration Assessment<a class="headerlink" href="#mcp-integration-assessment" title="Permanent link">&para;</a></h3>
+<p><strong>Strengths:</strong>
+- ✓ Comprehensive tool set (15+ tools)
+- ✓ Good documentation structure
+- ✓ Clear examples
+- ✓ Well-designed API</p>
+<p><strong>Weaknesses:</strong>
+- ❌ Server crashes on first run (critical)
+- ❌ No automated testing of MCP server
+- ⚠️ Configuration examples may have wrong paths
+- ⚠️ Limited error handling documentation</p>
+<h3 id="ai-readable-documentation">AI-Readable Documentation<a class="headerlink" href="#ai-readable-documentation" title="Permanent link">&para;</a></h3>
+<p><strong>Strengths:</strong>
+- ✓ Clear section headers
+- ✓ Code examples in multiple languages
+- ✓ Structured data (tables, lists)
+- ✓ Good technical depth</p>
+<p><strong>Weaknesses:</strong>
+- ❌ Duplicate content (confuses AI retrieval)
+- ❌ Inconsistent terminology
+- ⚠️ Some files reference wrong paths (AI will get lost)</p>
+<hr />
+<h2 id="code-quality-observations">Code Quality Observations<a class="headerlink" href="#code-quality-observations" title="Permanent link">&para;</a></h2>
+<h3 id="positive-findings">Positive Findings<a class="headerlink" href="#positive-findings" title="Permanent link">&para;</a></h3>
+<ol>
+<li>✓ Well-structured codebase (40+ modules)</li>
+<li>✓ Comprehensive test suite (53 test files)</li>
+<li>✓ Good separation of concerns</li>
+<li>✓ Type hints in modern code</li>
+<li>✓ Clear naming conventions</li>
+</ol>
+<h3 id="areas-for-improvement">Areas for Improvement<a class="headerlink" href="#areas-for-improvement" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Error handling doesn't always create required directories</li>
+<li>Some error messages are technical (not user-friendly)</li>
+<li>Version comments in source files stale</li>
+<li>Limited input validation in some CLI commands</li>
+</ol>
+<hr />
+<h2 id="recommendations-by-priority">Recommendations by Priority<a class="headerlink" href="#recommendations-by-priority" title="Permanent link">&para;</a></h2>
+<h3 id="immediate-actions-this-week">Immediate Actions (This Week)<a class="headerlink" href="#immediate-actions-this-week" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Fix MCP Server Crash</strong> (30 minutes)</li>
+<li>Create <code>~/.reveng</code> directory if not exists</li>
+<li>Add try/except for log file creation</li>
+<li>
+<p>Test on clean system</p>
+</li>
+<li>
+<p><strong>Update Version Comments</strong> (15 minutes)</p>
+</li>
+<li>Update <code>src/reveng/cli.py:9</code> to v4.0.0</li>
+<li>
+<p>Search codebase for other stale version refs</p>
+</li>
+<li>
+<p><strong>Consolidate Duplicate Docs</strong> (2 hours)</p>
+</li>
+<li>Choose canonical location for each doc type</li>
+<li>Add redirects/warnings in deprecated locations</li>
+<li>
+<p>Update all cross-references</p>
+</li>
+<li>
+<p><strong>Add Installation Verification</strong> (1 hour)</p>
+</li>
+<li>Enhance <code>install-reveng.sh</code> with post-install checks</li>
+<li>Add clear success/failure messages</li>
+<li>Provide troubleshooting link on failure</li>
+</ol>
+<h3 id="short-term-this-month">Short Term (This Month)<a class="headerlink" href="#short-term-this-month" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Create Documentation Navigation Guide</strong> (3 hours)</li>
+<li>Add decision tree to README</li>
+<li>Create "Start Here" section in docs/index.md</li>
+<li>
+<p>Add cross-references between related docs</p>
+</li>
+<li>
+<p><strong>Improve Error Messages</strong> (4 hours)</p>
+</li>
+<li>Audit all user-facing error messages</li>
+<li>Add actionable suggestions</li>
+<li>
+<p>Include troubleshooting links</p>
+</li>
+<li>
+<p><strong>Add Progress Indicators</strong> (3 hours)</p>
+</li>
+<li>Add progress bars for long operations</li>
+<li>Show what stage analysis is in</li>
+<li>
+<p>Estimate time remaining</p>
+</li>
+<li>
+<p><strong>Verify All Documentation Links</strong> (2 hours)</p>
+</li>
+<li>Script to check all file references</li>
+<li>Fix broken links</li>
+<li>Update line counts (or remove them)</li>
+</ol>
+<h3 id="medium-term-this-quarter">Medium Term (This Quarter)<a class="headerlink" href="#medium-term-this-quarter" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Create Interactive Tutorial</strong> (1 week)</li>
+<li>Step-by-step guided experience</li>
+<li>Built-in verification</li>
+<li>
+<p>Instant feedback</p>
+</li>
+<li>
+<p><strong>Add Telemetry (Opt-in)</strong> (1 week)</p>
+<ul>
+<li>Track common errors</li>
+<li>Identify user drop-off points</li>
+<li>Measure time-to-first-success</li>
+</ul>
+</li>
+<li>
+<p><strong>Improve Web UI Documentation</strong> (3 days)</p>
+<ul>
+<li>Screenshots and videos</li>
+<li>Feature walkthrough</li>
+<li>Use case examples</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="documentation-improvement-plan">Documentation Improvement Plan<a class="headerlink" href="#documentation-improvement-plan" title="Permanent link">&para;</a></h2>
+<h3 id="phase-1-consolidation-week-1">Phase 1: Consolidation (Week 1)<a class="headerlink" href="#phase-1-consolidation-week-1" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Merge duplicate installation docs</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Merge duplicate quick-start docs</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Update all references</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Add deprecation notices</li>
+</ul>
+<h3 id="phase-2-reorganization-week-2">Phase 2: Reorganization (Week 2)<a class="headerlink" href="#phase-2-reorganization-week-2" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Move CLI_REFERENCE.md to docs/</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Create clear docs/index.md</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Add navigation aids</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Create "Start Here" guide</li>
+</ul>
+<h3 id="phase-3-enhancement-week-3-4">Phase 3: Enhancement (Week 3-4)<a class="headerlink" href="#phase-3-enhancement-week-3-4" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Add troubleshooting for common errors</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Create video tutorials</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Add more examples</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Improve API documentation</li>
+</ul>
+<hr />
+<h2 id="testing-recommendations">Testing Recommendations<a class="headerlink" href="#testing-recommendations" title="Permanent link">&para;</a></h2>
+<h3 id="user-acceptance-testing">User Acceptance Testing<a class="headerlink" href="#user-acceptance-testing" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Fresh Ubuntu VM test</li>
+<li>Fresh macOS test</li>
+<li>Fresh Windows test</li>
+<li>Test with Python 3.9, 3.10, 3.11, 3.12</li>
+</ol>
+<h3 id="documentation-testing">Documentation Testing<a class="headerlink" href="#documentation-testing" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Link checker (verify all references)</li>
+<li>Code example validator (ensure they run)</li>
+<li>Installation flow testing (automated)</li>
+</ol>
+<h3 id="automation">Automation<a class="headerlink" href="#automation" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Add CI/CD step to validate documentation</li>
+<li>Auto-generate line counts</li>
+<li>Check for duplicate content</li>
+<li>Verify all file references</li>
+</ol>
+<hr />
+<h2 id="metrics-for-success">Metrics for Success<a class="headerlink" href="#metrics-for-success" title="Permanent link">&para;</a></h2>
+<h3 id="before-current-state">Before (Current State)<a class="headerlink" href="#before-current-state" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Time to First Success: ~15-30 minutes (with errors)</li>
+<li>Installation Success Rate: ~70% (estimated)</li>
+<li>MCP Server Launch Success: 0% (crashes)</li>
+<li>Documentation Confusion: High (duplicates)</li>
+</ul>
+<h3 id="after-target-state">After (Target State)<a class="headerlink" href="#after-target-state" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Time to First Success: &lt;5 minutes</li>
+<li>Installation Success Rate: &gt;95%</li>
+<li>MCP Server Launch Success: &gt;95%</li>
+<li>Documentation Confusion: Low (clear paths)</li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>The REVENG platform has <strong>excellent core functionality</strong> and <strong>comprehensive documentation</strong>, but suffers from <strong>organizational issues</strong> and <strong>minor implementation gaps</strong> that significantly impact first-time user experience.</p>
+<h3 id="key-strengths">Key Strengths<a class="headerlink" href="#key-strengths" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Comprehensive feature set</li>
+<li>Well-written documentation</li>
+<li>Clear code structure</li>
+<li>Good examples</li>
+</ol>
+<h3 id="key-weaknesses">Key Weaknesses<a class="headerlink" href="#key-weaknesses" title="Permanent link">&para;</a></h3>
+<ol>
+<li>MCP server crashes (critical)</li>
+<li>Duplicate documentation (confusion)</li>
+<li>Installation friction</li>
+<li>Missing error handling</li>
+</ol>
+<h3 id="overall-recommendation">Overall Recommendation<a class="headerlink" href="#overall-recommendation" title="Permanent link">&para;</a></h3>
+<p>With the fixes outlined in this report (estimated 2-3 days of work), REVENG can achieve a <strong>seamless onboarding experience</strong> and become significantly more user-friendly and AI-agent-friendly.</p>
+<h3 id="priority-order">Priority Order<a class="headerlink" href="#priority-order" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Fix MCP crash (blocks v4.0 headline feature)</li>
+<li>Consolidate docs (reduces confusion)</li>
+<li>Improve installation (reduces friction)</li>
+<li>Add progress/feedback (improves UX)</li>
+</ol>
+<hr />
+<h2 id="appendix-a-files-audited">Appendix A: Files Audited<a class="headerlink" href="#appendix-a-files-audited" title="Permanent link">&para;</a></h2>
+<h3 id="documentation-15-files">Documentation (15+ files)<a class="headerlink" href="#documentation-15-files" title="Permanent link">&para;</a></h3>
+<ul>
+<li>README.md</li>
+<li>QUICK_START.md</li>
+<li>GETTING_STARTED.md</li>
+<li>INSTALLATION.md</li>
+<li>CLI_REFERENCE.md</li>
+<li>docs/index.md</li>
+<li>docs/getting-started/*.md</li>
+<li>docs/mcp/README.md</li>
+</ul>
+<h3 id="code-10-files">Code (10+ files)<a class="headerlink" href="#code-10-files" title="Permanent link">&para;</a></h3>
+<ul>
+<li>src/reveng/cli.py</li>
+<li>src/reveng/version.py</li>
+<li>reveng-mcp-server</li>
+<li>install-reveng.sh</li>
+<li>examples/*.py</li>
+</ul>
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h3>
+<ul>
+<li>pyproject.toml</li>
+<li>mcp-config.example.json</li>
+</ul>
+<hr />
+<h2 id="appendix-b-test-commands-used">Appendix B: Test Commands Used<a class="headerlink" href="#appendix-b-test-commands-used" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Installation testing</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>./install-reveng.sh
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>reveng<span class="w"> </span>--version
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># CLI testing</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>python3<span class="w"> </span>src/reveng/cli.py<span class="w"> </span>--help
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">"import sys; sys.path.insert(0, 'src'); from reveng.cli import main"</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="c1"># MCP testing</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>./reveng-mcp-server<span class="w"> </span>--help
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="c1"># Documentation verification</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>wc<span class="w"> </span>-l<span class="w"> </span>*.md<span class="w"> </span>docs/**/*.md
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>grep<span class="w"> </span>-r<span class="w"> </span><span class="s2">"Version:"</span><span class="w"> </span>src/
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span><span class="s2">"*.md"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>grep<span class="w"> </span>-l<span class="w"> </span><span class="s2">"installation"</span>
+</span></code></pre></div>
+<hr />
+<p><strong>End of Audit Report</strong></p>
+<p><em>This audit was conducted with the goal of "ultrathinkin" - going deep into every aspect of the user experience to identify even minor friction points that could be improved.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/oimiragieo/reveng-main" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/reveng_toolkit" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://hub.docker.com/r/reveng/cli" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

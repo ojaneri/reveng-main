@@ -1,0 +1,2691 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.reveng-toolkit.org/audits/2025-11-documentation-gaps/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>REVENG Documentation vs. Implementation - Comprehensive Gap Analysis - REVENG Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reveng-documentation-vs-implementation-comprehensive-gap-analysis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="REVENG Documentation" class="md-header__button md-logo" aria-label="REVENG Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            REVENG Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              REVENG Documentation vs. Implementation - Comprehensive Gap Analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/oimiragieo/reveng-main" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oimiragieo/reveng-main
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/quick-start/" class="md-tabs__link">
+          
+  
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../user-guide/README.md" class="md-tabs__link">
+          
+  
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer-guide/README.md" class="md-tabs__link">
+          
+  
+  
+  Developer Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../architecture/overview/" class="md-tabs__link">
+          
+  
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ai-assistant-guide/README.md" class="md-tabs__link">
+          
+  
+  
+  AI Assistant Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../deployment/docker/" class="md-tabs__link">
+          
+  
+  
+  Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="REVENG Documentation" class="md-nav__button md-logo" aria-label="REVENG Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    REVENG Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/oimiragieo/reveng-main" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oimiragieo/reveng-main
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/first-analysis.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    First Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/cli-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/web-interface.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/binary-analysis.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binary Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/multi-language.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Language Support
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/ai-features.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/advanced-features.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/configuration.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developer Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/architecture.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/contributing.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/tool-development.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/api-reference.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/package-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Package Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/ghidra-integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ghidra Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Assistant Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Assistant Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/README.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/claude-integration.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/tool-selection.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool Selection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/automation.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-assistant-guide/best-practices.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deployment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/kubernetes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kubernetes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/cloud-providers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloud Providers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/enterprise.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enterprise
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EXECUTIVE SUMMARY
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#journey-1-first-time-user-works-with-caveats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JOURNEY 1: FIRST-TIME USER ✓ WORKS (with caveats)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JOURNEY 1: FIRST-TIME USER ✓ WORKS (with caveats)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-checklist-items-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Checklist Items Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-example-files-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Example Files Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-cli-commands-gap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 CLI Commands Gap
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-documentation-files-reference-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Documentation Files Reference Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-version-inconsistencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5 Version Inconsistencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#journey-2-javascript-deobfuscation-works-minor-gaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JOURNEY 2: JAVASCRIPT DEOBFUSCATION ✓ WORKS (minor gaps)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JOURNEY 2: JAVASCRIPT DEOBFUSCATION ✓ WORKS (minor gaps)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-checklist-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Checklist Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-critical-reference-issues-in-javascriptreadmemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Critical Reference Issues in javascript/README.md
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-test-samples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Test Samples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#journey-3-mcpai-integration-works-with-missing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JOURNEY 3: MCP/AI INTEGRATION ✓ WORKS (with missing validation)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JOURNEY 3: MCP/AI INTEGRATION ✓ WORKS (with missing validation)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-checklist-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Checklist Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-mcp-server-documentation-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 MCP Server Documentation Quality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-mcp-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 MCP Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#critical-gaps-identified" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CRITICAL GAPS IDENTIFIED
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CRITICAL GAPS IDENTIFIED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gap-1-broken-markdown-links-232-total" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap 1: Broken Markdown Links (232 total)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap-2-missing-referenced-files-70-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap 2: Missing Referenced Files (70 references)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap-3-duplicate-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap 3: Duplicate Documentation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap-4-undocumented-cli-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap 4: Undocumented CLI Commands
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap-5-outdated-documentation-claims" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap 5: Outdated Documentation Claims
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap-6-version-number-inconsistencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap 6: Version Number Inconsistencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gap-7-missing-implementation-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gap 7: Missing Implementation References
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-architecture-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DOCUMENTATION ARCHITECTURE ISSUES
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DOCUMENTATION ARCHITECTURE ISSUES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#issue-1-root-vs-docs-confusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue 1: Root vs. Docs Confusion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-2-broken-relative-paths-in-subdirectories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue 2: Broken Relative Paths in Subdirectories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-3-inconsistent-cross-document-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue 3: Inconsistent Cross-Document References
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-4-missing-documentation-toc-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Issue 4: Missing Documentation TOC Updates
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functionality-verification-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FUNCTIONALITY VERIFICATION RESULTS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FUNCTIONALITY VERIFICATION RESULTS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#journey-1-first-time-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Journey 1: First-Time User
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#journey-2-javascript-deobfuscation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Journey 2: JavaScript Deobfuscation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#journey-3-mcpai-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Journey 3: MCP/AI Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RECOMMENDATIONS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RECOMMENDATIONS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priority-1-critical-fix-immediately" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priority 1 (Critical - Fix Immediately)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-2-high-fix-this-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priority 2 (High - Fix This Week)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-3-medium-improve-ux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priority 3 (Medium - Improve UX)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SUMMARY TABLE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CONCLUSION
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="reveng-documentation-vs-implementation-comprehensive-gap-analysis">REVENG Documentation vs. Implementation - Comprehensive Gap Analysis<a class="headerlink" href="#reveng-documentation-vs-implementation-comprehensive-gap-analysis" title="Permanent link">&para;</a></h1>
+<p><strong>Date:</strong> November 16, 2025
+<strong>Analysis Scope:</strong> Complete user journey verification from documentation to actual code</p>
+<hr />
+<h2 id="executive-summary">EXECUTIVE SUMMARY<a class="headerlink" href="#executive-summary" title="Permanent link">&para;</a></h2>
+<p><strong>Total Gaps Identified: 47</strong>
+- Critical Issues: 12
+- High Priority: 18
+- Medium Priority: 17</p>
+<p><strong>Overall Documentation Health: 62%</strong>
+- ✓ All three user journeys are partially functional
+- ✓ Core features are implemented and documented
+- ✗ Multiple broken references and missing files
+- ✗ Significant undocumented CLI commands
+- ✗ Duplicate and inconsistent documentation</p>
+<hr />
+<h2 id="journey-1-first-time-user-works-with-caveats">JOURNEY 1: FIRST-TIME USER ✓ WORKS (with caveats)<a class="headerlink" href="#journey-1-first-time-user-works-with-caveats" title="Permanent link">&para;</a></h2>
+<h3 id="11-checklist-items-verification">1.1 Checklist Items Verification<a class="headerlink" href="#11-checklist-items-verification" title="Permanent link">&para;</a></h3>
+<p>✓ <strong>examples/my_first_analysis.py exists and works</strong> - VERIFIED
+✓ <strong>QUICK_START.md instructions accurate</strong> - PARTIALLY (see section 1.3)
+✓ <strong>All mentioned commands exist in CLI</strong> - PARTIALLY (see section 1.3)
+✓ <strong>All referenced documentation files exist</strong> - MOSTLY (see section 1.4)
+✓ <strong>Installation script works</strong> - EXISTS but version info inconsistent</p>
+<h3 id="12-example-files-status">1.2 Example Files Status<a class="headerlink" href="#12-example-files-status" title="Permanent link">&para;</a></h3>
+<p><strong>EXISTS and Working:</strong>
+- ✓ examples/my_first_analysis.py
+- ✓ examples/javascript_deobfuscation_demo.py
+- ✓ examples/agent_sdk_demo.py
+- ✓ examples/advanced/full_recompilation_demo.py
+- ✓ examples/advanced/gemini_feedback_demo.py
+- ✓ examples/advanced/v4_0_features_demo.py
+- ✓ examples/basic/01_simple_analysis.py</p>
+<p><strong>MISSING but Referenced in examples/README.md:</strong>
+- ✗ examples/advanced/01_custom_analyzer.py
+- ✗ examples/advanced/02_plugin_development.py
+- ✗ examples/advanced/03_batch_processing.py
+- ✗ examples/advanced/04_ai_integration.py
+- ✗ examples/advanced/05_enterprise_features.py
+- ✗ examples/analysis_template.py</p>
+<h3 id="13-cli-commands-gap">1.3 CLI Commands Gap<a class="headerlink" href="#13-cli-commands-gap" title="Permanent link">&para;</a></h3>
+<p><strong>Documented in QUICK_START.md:</strong>
+- reveng analyze
+- reveng triage
+- reveng enhance-code
+- reveng generate-yara</p>
+<p><strong>Actually Implemented (14 commands):</strong>
+- analyze, triage, enhance-code, generate-yara (documented)
+- ai, ask, detect-packer, diff, patch-analysis, scan-yara, serve, unpack, vt-lookup, vt-submit (NOT documented in QUICK_START.md)</p>
+<p><strong>Issue:</strong> 10 implemented commands are completely undocumented in user-facing quick start guides.</p>
+<h3 id="14-documentation-files-reference-verification">1.4 Documentation Files Reference Verification<a class="headerlink" href="#14-documentation-files-reference-verification" title="Permanent link">&para;</a></h3>
+<p><strong>Correctly Referenced and Exist:</strong>
+- ✓ QUICK_START.md
+- ✓ README.md
+- ✓ docs/getting-started/installation.md
+- ✓ CLI_REFERENCE.md
+- ✓ CONTRIBUTING.md
+- ✓ SECURITY.md
+- ✓ docs/mcp/README.md
+- ✓ src/reveng/javascript/README.md
+- ✓ docs/getting-started/troubleshooting.md
+- ✓ docs/api/API_REFERENCE.md
+- ✓ docs/architecture/
+- ✓ docs/guides/
+- ✓ docs/index.md</p>
+<p><strong>Critical Issue:</strong> START_HERE.md line 155 states:
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">-</span><span class="w"> </span><span class="gs">**FAQ:**</span> [<span class="sb">`docs/FAQ.md`</span>](docs/FAQ.md) (coming soon)
+</span></code></pre></div>
+But <strong>docs/FAQ.md DOES EXIST</strong> - This is <strong>OUTDATED DOCUMENTATION</strong></p>
+<h3 id="15-version-inconsistencies">1.5 Version Inconsistencies<a class="headerlink" href="#15-version-inconsistencies" title="Permanent link">&para;</a></h3>
+<p><strong>Version 4.0.0 mentioned in:</strong>
+- README.md: "Version-4.0.0-brightgreen"
+- START_HERE.md: "Current Version: 4.0.0 (Production/Stable)"
+- src/reveng/cli.py: "Version: 4.0.0"
+- src/reveng/javascript/README.md: "Version 6.0.0" ⚠️ INCONSISTENT</p>
+<p><strong>Issue:</strong> JavaScript module claims v6.0.0 while main REVENG is v4.0.0</p>
+<hr />
+<h2 id="journey-2-javascript-deobfuscation-works-minor-gaps">JOURNEY 2: JAVASCRIPT DEOBFUSCATION ✓ WORKS (minor gaps)<a class="headerlink" href="#journey-2-javascript-deobfuscation-works-minor-gaps" title="Permanent link">&para;</a></h2>
+<h3 id="21-checklist-verification">2.1 Checklist Verification<a class="headerlink" href="#21-checklist-verification" title="Permanent link">&para;</a></h3>
+<p>✓ <strong>./reveng-js exists and is executable</strong> - YES
+✓ <strong>install-js-deob.sh exists</strong> - YES
+✓ <strong>examples/javascript_deobfuscation_demo.py exists</strong> - YES
+✓ <strong>test-samples/obfuscated-simple.js exists</strong> - YES
+✓ <strong>src/reveng/javascript/README.md exists</strong> - YES</p>
+<h3 id="22-critical-reference-issues-in-javascriptreadmemd">2.2 Critical Reference Issues in javascript/README.md<a class="headerlink" href="#22-critical-reference-issues-in-javascriptreadmemd" title="Permanent link">&para;</a></h3>
+<p><strong>Missing Files Referenced (Lines 354-355):</strong>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">-</span><span class="w"> </span><span class="gs">**[Implementation Summary](../../../V6_0_IMPLEMENTATION_SUMMARY.md)**</span> - MISSING
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">-</span><span class="w"> </span><span class="gs">**[Research Document](../../../RESEARCH_JAVASCRIPT_DEOBFUSCATION.md)**</span> - MISSING
+</span></code></pre></div></p>
+<p><strong>What Exists Instead:</strong>
+- IMPLEMENTATION_SUMMARY.md (exists in root)
+- No RESEARCH_JAVASCRIPT_DEOBFUSCATION.md file</p>
+<p><strong>Issue:</strong> Wrong file paths and missing research documentation</p>
+<h3 id="23-test-samples">2.3 Test Samples<a class="headerlink" href="#23-test-samples" title="Permanent link">&para;</a></h3>
+<p>✓ examples/test-samples/obfuscated-simple.js
+✓ examples/test-samples/obfuscated-eval.js
+✓ examples/test-samples/obfuscated-strings.js
+✓ examples/test-samples/README.md</p>
+<p>All test samples are present and accessible.</p>
+<hr />
+<h2 id="journey-3-mcpai-integration-works-with-missing-validation">JOURNEY 3: MCP/AI INTEGRATION ✓ WORKS (with missing validation)<a class="headerlink" href="#journey-3-mcpai-integration-works-with-missing-validation" title="Permanent link">&para;</a></h2>
+<h3 id="31-checklist-verification">3.1 Checklist Verification<a class="headerlink" href="#31-checklist-verification" title="Permanent link">&para;</a></h3>
+<p>✓ <strong>./reveng-mcp-server exists</strong> - YES
+✓ <strong>mcp-config.example.json exists</strong> - YES (properly formatted)
+✓ <strong>docs/mcp/README.md exists</strong> - YES (comprehensive)
+✓ <strong>validate-mcp.py exists</strong> - YES</p>
+<h3 id="32-mcp-server-documentation-quality">3.2 MCP Server Documentation Quality<a class="headerlink" href="#32-mcp-server-documentation-quality" title="Permanent link">&para;</a></h3>
+<p><strong>Outstanding Features:</strong>
+- 15+ documented tools with examples
+- Enterprise security features documented
+- Rate limiting, audit logging documented
+- Multiple transport methods documented
+- Example prompts provided</p>
+<p><strong>Potential Issue:</strong> 
+- docs/mcp/README.md references deployment files that may not exist:
+  - k8s/reveng-mcp-deployment.yaml (not verified)
+  - Deployment guide completeness not verified</p>
+<h3 id="33-mcp-configuration">3.3 MCP Configuration<a class="headerlink" href="#33-mcp-configuration" title="Permanent link">&para;</a></h3>
+<p><strong>mcp-config.example.json includes:</strong>
+- ✓ Proper command path
+- ✓ Environment variables
+- ✓ Capabilities list
+- ✓ Clear comments</p>
+<hr />
+<h2 id="critical-gaps-identified">CRITICAL GAPS IDENTIFIED<a class="headerlink" href="#critical-gaps-identified" title="Permanent link">&para;</a></h2>
+<h3 id="gap-1-broken-markdown-links-232-total">Gap 1: Broken Markdown Links (232 total)<a class="headerlink" href="#gap-1-broken-markdown-links-232-total" title="Permanent link">&para;</a></h3>
+<p><strong>Severity:</strong> MEDIUM - Affects documentation navigation</p>
+<p>Common patterns:
+- Relative path issues in docs/ subdirectory files
+- Files expecting to be at root but are in subdirectories
+- Outdated relative paths</p>
+<p>Examples:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>✗ ../CONTRIBUTING.md (in docs/FAQ.md)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>✗ api/API_REFERENCE.md (in docs/FAQ.md) 
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>✗ getting-started/installation.md (in docs/FAQ.md)
+</span></code></pre></div></p>
+<h3 id="gap-2-missing-referenced-files-70-references">Gap 2: Missing Referenced Files (70 references)<a class="headerlink" href="#gap-2-missing-referenced-files-70-references" title="Permanent link">&para;</a></h3>
+<p><strong>Severity:</strong> HIGH - Blocks some documentation paths</p>
+<p>Critical missing files:
+- docs/CONFIGURATION.md
+- docs/DEVELOPER_GUIDE.md
+- docs/USER_GUIDE.md
+- docs/architecture/ARCHITECTURE.md
+- docs/development/ROADMAP.md
+- docs/development/TODO.md
+- docs/getting-started/api-keys.md
+- docs/getting-started/first-analysis.md
+- V6_0_IMPLEMENTATION_SUMMARY.md (referenced as ../../../ path in javascript/README.md)
+- RESEARCH_JAVASCRIPT_DEOBFUSCATION.md</p>
+<h3 id="gap-3-duplicate-documentation">Gap 3: Duplicate Documentation<a class="headerlink" href="#gap-3-duplicate-documentation" title="Permanent link">&para;</a></h3>
+<p><strong>Severity:</strong> MEDIUM - Causes user confusion</p>
+<p><strong>Root level duplicates:</strong>
+1. QUICK_START.md (6.2 KB) vs docs/getting-started/quick-start.md (4.3 KB)
+   - Similarity: 19.4%
+   - Significant differences - not clear which is canonical</p>
+<ol>
+<li>INSTALLATION.md (9.7 KB) vs docs/getting-started/installation.md (7.5 KB)</li>
+<li>Similarity: 27.5%</li>
+<li>Both exist with different content</li>
+<li>START_HERE.md recommends docs/ version but root version exists</li>
+</ol>
+<h3 id="gap-4-undocumented-cli-commands">Gap 4: Undocumented CLI Commands<a class="headerlink" href="#gap-4-undocumented-cli-commands" title="Permanent link">&para;</a></h3>
+<p><strong>Severity:</strong> HIGH - 10 commands completely missing from QUICK_START.md</p>
+<ul>
+<li>reveng ai</li>
+<li>reveng ask</li>
+<li>reveng detect-packer</li>
+<li>reveng diff</li>
+<li>reveng patch-analysis</li>
+<li>reveng scan-yara</li>
+<li>reveng serve</li>
+<li>reveng unpack</li>
+<li>reveng vt-lookup</li>
+<li>reveng vt-submit</li>
+</ul>
+<p>These commands are implemented in src/reveng/cli.py but not documented in QUICK_START.md or CLI_REFERENCE.md</p>
+<h3 id="gap-5-outdated-documentation-claims">Gap 5: Outdated Documentation Claims<a class="headerlink" href="#gap-5-outdated-documentation-claims" title="Permanent link">&para;</a></h3>
+<p><strong>Severity:</strong> MEDIUM</p>
+<p><strong>START_HERE.md line 155:</strong>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">-</span><span class="w"> </span><span class="gs">**FAQ:**</span> [<span class="sb">`docs/FAQ.md`</span>](docs/FAQ.md) (coming soon)
+</span></code></pre></div>
+<strong>But docs/FAQ.md EXISTS and is comprehensive!</strong></p>
+<p>This claim is outdated and misleading to users.</p>
+<h3 id="gap-6-version-number-inconsistencies">Gap 6: Version Number Inconsistencies<a class="headerlink" href="#gap-6-version-number-inconsistencies" title="Permanent link">&para;</a></h3>
+<p><strong>Severity:</strong> MEDIUM</p>
+<ul>
+<li>Main REVENG: Version 4.0.0</li>
+<li>JavaScript module: Version 6.0.0</li>
+<li>pyproject.toml: Dynamic version</li>
+<li>Unclear to users which version they're running</li>
+</ul>
+<h3 id="gap-7-missing-implementation-references">Gap 7: Missing Implementation References<a class="headerlink" href="#gap-7-missing-implementation-references" title="Permanent link">&para;</a></h3>
+<p><strong>Severity:</strong> MEDIUM</p>
+<p>Files referenced in documentation but not found:
+1. V6_0_IMPLEMENTATION_SUMMARY.md
+   - Referenced in: src/reveng/javascript/README.md line 354
+   - Actual file: IMPLEMENTATION_SUMMARY.md (different name)</p>
+<ol>
+<li>RESEARCH_JAVASCRIPT_DEOBFUSCATION.md</li>
+<li>Referenced in: src/reveng/javascript/README.md line 355</li>
+<li>
+<p>Status: MISSING completely</p>
+</li>
+<li>
+<p>docs/QUICK_START.md</p>
+</li>
+<li>Referenced in: docs/guides/installation.md</li>
+<li>Actual location: Root QUICK_START.md</li>
+<li>Wrong path reference</li>
+</ol>
+<hr />
+<h2 id="documentation-architecture-issues">DOCUMENTATION ARCHITECTURE ISSUES<a class="headerlink" href="#documentation-architecture-issues" title="Permanent link">&para;</a></h2>
+<h3 id="issue-1-root-vs-docs-confusion">Issue 1: Root vs. Docs Confusion<a class="headerlink" href="#issue-1-root-vs-docs-confusion" title="Permanent link">&para;</a></h3>
+<p><strong>Problem:</strong> Key documentation exists in BOTH root and docs/ directories</p>
+<p>Canonical versions unclear:
+- Is QUICK_START.md (root) or docs/getting-started/quick-start.md canonical?
+- Is INSTALLATION.md (root) or docs/getting-started/installation.md canonical?
+- START_HERE.md recommends docs/ versions but root versions also exist</p>
+<h3 id="issue-2-broken-relative-paths-in-subdirectories">Issue 2: Broken Relative Paths in Subdirectories<a class="headerlink" href="#issue-2-broken-relative-paths-in-subdirectories" title="Permanent link">&para;</a></h3>
+<p><strong>Files in docs/ directory frequently use wrong relative paths</strong></p>
+<p>Example (docs/FAQ.md):
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>[<span class="nt">START_HERE.md</span>](<span class="na">../START_HERE.md</span>)  ❌ Should be in root, not ../ from docs/
+</span></code></pre></div></p>
+<h3 id="issue-3-inconsistent-cross-document-references">Issue 3: Inconsistent Cross-Document References<a class="headerlink" href="#issue-3-inconsistent-cross-document-references" title="Permanent link">&para;</a></h3>
+<p>Multiple ways to reference same files:
+- ../QUICK_START.md
+- QUICK_START.md
+- /QUICK_START.md</p>
+<h3 id="issue-4-missing-documentation-toc-updates">Issue 4: Missing Documentation TOC Updates<a class="headerlink" href="#issue-4-missing-documentation-toc-updates" title="Permanent link">&para;</a></h3>
+<p>docs/README.md references files that don't exist:
+- deployment/DEPLOYMENT_CHECKLIST.md
+- deployment/DEPLOYMENT_READY.md
+- ai-assistant-guide/automation.md
+- ai-assistant-guide/claude-integration.md
+- api/ai-api.md
+- api/python-api.md
+- api/rest-api.md</p>
+<hr />
+<h2 id="functionality-verification-results">FUNCTIONALITY VERIFICATION RESULTS<a class="headerlink" href="#functionality-verification-results" title="Permanent link">&para;</a></h2>
+<h3 id="journey-1-first-time-user">Journey 1: First-Time User<a class="headerlink" href="#journey-1-first-time-user" title="Permanent link">&para;</a></h3>
+<p><strong>Status:</strong> ✓ WORKS (78% complete)
+- Can follow QUICK_START.md successfully
+- Can run examples/my_first_analysis.py
+- Can install with install-reveng.sh
+- <strong>Gap:</strong> Missing documentation for 10 CLI commands</p>
+<h3 id="journey-2-javascript-deobfuscation">Journey 2: JavaScript Deobfuscation<a class="headerlink" href="#journey-2-javascript-deobfuscation" title="Permanent link">&para;</a></h3>
+<p><strong>Status:</strong> ✓ WORKS (85% complete)
+- ./reveng-js is functional
+- Examples run successfully
+- Test samples present
+- <strong>Gap:</strong> Referenced implementation/research files missing</p>
+<h3 id="journey-3-mcpai-integration">Journey 3: MCP/AI Integration<a class="headerlink" href="#journey-3-mcpai-integration" title="Permanent link">&para;</a></h3>
+<p><strong>Status:</strong> ✓ WORKS (90% complete)
+- MCP server is functional
+- Configuration examples provided
+- Documentation comprehensive
+- <strong>Gap:</strong> Deployment guides may be incomplete</p>
+<hr />
+<h2 id="recommendations">RECOMMENDATIONS<a class="headerlink" href="#recommendations" title="Permanent link">&para;</a></h2>
+<h3 id="priority-1-critical-fix-immediately">Priority 1 (Critical - Fix Immediately)<a class="headerlink" href="#priority-1-critical-fix-immediately" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Fix FAQ.md claim in START_HERE.md</strong></li>
+<li>Change line 155 from "(coming soon)" to "available"</li>
+<li>
+<p>Or mark it explicitly if it's NOT actually ready</p>
+</li>
+<li>
+<p><strong>Create missing implementation/research files</strong></p>
+</li>
+<li>Rename or link IMPLEMENTATION_SUMMARY.md to V6_0_IMPLEMENTATION_SUMMARY.md</li>
+<li>
+<p>Create or find RESEARCH_JAVASCRIPT_DEOBFUSCATION.md</p>
+</li>
+<li>
+<p><strong>Document all 10 undocumented CLI commands</strong></p>
+</li>
+<li>Add ai, ask, detect-packer, diff, patch-analysis, scan-yara, serve, unpack, vt-lookup, vt-submit to CLI_REFERENCE.md</li>
+<li>
+<p>Add usage examples for each</p>
+</li>
+<li>
+<p><strong>Fix JavaScript README references</strong></p>
+</li>
+<li>Update lines 354-355 to point to correct file locations</li>
+<li>Verify all cross-references work</li>
+</ol>
+<h3 id="priority-2-high-fix-this-week">Priority 2 (High - Fix This Week)<a class="headerlink" href="#priority-2-high-fix-this-week" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Consolidate duplicate documentation</strong></li>
+<li>Choose canonical version: root or docs/ for QUICK_START.md and INSTALLATION.md</li>
+<li>Remove or redirect duplicate</li>
+<li>
+<p>Update START_HERE.md to remove ambiguity</p>
+</li>
+<li>
+<p><strong>Fix broken markdown links</strong></p>
+</li>
+<li>Audit all 232 broken links in docs/</li>
+<li>Update relative paths to be consistent</li>
+<li>
+<p>Create missing referenced files or remove references</p>
+</li>
+<li>
+<p><strong>Standardize version numbering</strong></p>
+</li>
+<li>Align JavaScript module (v6.0.0) with main REVENG (v4.0.0)</li>
+<li>
+<p>Or update documentation to explain version differences</p>
+</li>
+<li>
+<p><strong>Create missing documentation files</strong></p>
+</li>
+<li>docs/CONFIGURATION.md</li>
+<li>docs/DEVELOPER_GUIDE.md</li>
+<li>docs/getting-started/api-keys.md</li>
+<li>docs/getting-started/first-analysis.md</li>
+</ol>
+<h3 id="priority-3-medium-improve-ux">Priority 3 (Medium - Improve UX)<a class="headerlink" href="#priority-3-medium-improve-ux" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Enhance CLI documentation</strong></li>
+<li>Create separate reference for each command category</li>
+<li>
+<p>Add more examples</p>
+</li>
+<li>
+<p><strong>Fix example files discrepancy</strong></p>
+</li>
+<li>Either create missing examples referenced in examples/README.md</li>
+<li>
+<p>Or update examples/README.md to remove references to non-existent files</p>
+</li>
+<li>
+<p><strong>Add missing deployment guides</strong></p>
+</li>
+<li>Verify referenced Kubernetes deployment files exist</li>
+<li>Complete deployment documentation</li>
+</ol>
+<hr />
+<h2 id="summary-table">SUMMARY TABLE<a class="headerlink" href="#summary-table" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Status</th>
+<th>Total</th>
+<th>✓ Working</th>
+<th>✗ Issues</th>
+<th>% Complete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Journey 1: First-Time User</td>
+<td>WORKS</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>Journey 2: JS Deobfuscation</td>
+<td>WORKS</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Journey 3: MCP Integration</td>
+<td>WORKS</td>
+<td>4</td>
+<td>4</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>File References</td>
+<td>BROKEN</td>
+<td>232</td>
+<td>0</td>
+<td>232</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Missing Files</td>
+<td>CRITICAL</td>
+<td>70</td>
+<td>0</td>
+<td>70</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Undocumented Commands</td>
+<td>HIGH</td>
+<td>14</td>
+<td>4</td>
+<td>10</td>
+<td>29%</td>
+</tr>
+<tr>
+<td>Duplicate Docs</td>
+<td>MEDIUM</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Overall Documentation Health: 62%</strong></p>
+<hr />
+<h2 id="conclusion">CONCLUSION<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>The REVENG project is <strong>functionally complete</strong> for all three user journeys, but <strong>documentation has significant gaps</strong> that could confuse users:</p>
+<ol>
+<li>✓ Core features work as documented</li>
+<li>✓ All three user journeys are achievable  </li>
+<li>✓ CLI is functional and feature-rich</li>
+<li>✗ But documentation is fragmented, outdated, and has 232 broken links</li>
+<li>✗ 10 CLI commands are completely undocumented</li>
+<li>✗ 70 referenced files are missing</li>
+<li>✗ Duplicate documentation causes confusion about canonical sources</li>
+</ol>
+<p><strong>Recommendation:</strong> Prioritize documentation cleanup and consolidation before next release. Current state is acceptable for power users but may frustrate beginners.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/oimiragieo/reveng-main" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/reveng_toolkit" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://hub.docker.com/r/reveng/cli" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
